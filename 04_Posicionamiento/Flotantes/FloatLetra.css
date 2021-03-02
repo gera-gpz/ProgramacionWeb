@@ -1,0 +1,17 @@
+
+.box1 {
+    background-color: blueviolet;
+    color: white;
+    width: 50%;
+}
+
+.box2 {
+    background-color: limegreen;
+    color: white;
+    width: 50%;
+}
+
+.letra {
+    float: left;
+    font-size: 3em;
+}

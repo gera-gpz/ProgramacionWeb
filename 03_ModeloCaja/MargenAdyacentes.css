@@ -1,0 +1,9 @@
+/* Comportamiento de margenes entre contenedores adyacentes */
+
+.caja50 {  margin:50px;
+    border-style: solid;
+    border-color: blue; }
+
+.caja30 {  margin:30px;
+    border-style: solid;
+    border-color:red; }

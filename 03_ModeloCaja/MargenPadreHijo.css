@@ -1,0 +1,24 @@
+* { box-sizing: border-box;}
+
+/* Comportamiento de margen entre padres e hijos */
+
+.contenedorIndep {
+    margin: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.contenedorPadre {
+    margin: 30px;
+    background-color: yellowgreen;
+    height: 100px;
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+}
+
+.contenedorHijo {
+    margin: 10px;
+    background-color: red;
+    color:whitesmoke;
+}
+

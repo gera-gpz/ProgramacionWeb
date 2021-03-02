@@ -1,0 +1,12 @@
+
+p {
+	color: blue;
+	border: 1px solid blue;
+	padding: 1em;
+	overflow: auto;
+}
+
+ img {
+	float: right;
+	margin: 1em;
+}

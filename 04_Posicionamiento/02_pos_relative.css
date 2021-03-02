@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#caja1,
+#caja2,
+#caja3 {
+    background-color: rgb(33, 61, 134);
+    color: white;
+    font-family: verdana;
+    font-size: 0.8em;
+    width: 400px;
+    height: 150px;
+    margin: 5px;
+    padding: 3px;
+    position: relative;
+}
+
+
+#caja2 {
+    background-color:green;
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+
+
+h3 {
+    color: yellow;
+}
+
+
+#caja1 { z-index: 2; }
+#caja2 { z-index: 3; }
+#caja3 { z-index: 2; }

@@ -1,0 +1,13 @@
+/*--------------------------------------------*/
+/* Definición de estilos en un archivo externo*/
+/*--------------------------------------------*/
+
+h2 {
+    color: blue;
+}
+
+p  {
+     color:red;
+     font-family:Courier-New,Courier;
+}
+

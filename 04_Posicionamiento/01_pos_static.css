@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+    color: yellow;
+}
+
+
+.caja {
+    background-color: rgb(33,61,134);
+    color: white;
+    font-family: verdana;
+    font-size: 0.8em;
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+    padding: 3px;
+}
+
+
+#caja2 {
+    background-color:green;
+}

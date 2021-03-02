@@ -1,0 +1,28 @@
+/*
+Un contenedor padre "no vera" los elementos flotantes que tenga dentro
+Pero podemos "hacer que los vea" agregandole la propiedad overflow
+*/
+
+* {
+  font-family: sans-serif;
+  font-weight: bold;  
+  color:white;
+}
+
+.Contenedor {
+  position: relative;
+  background-color: blue;
+  padding: 7px;
+  /* overflow: auto; */
+}
+
+.cajaInternaFloat {
+  float: right;
+  background-color: green;
+  border-color:white;
+  border-width: 2px;
+  border-style: solid;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  }

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.caja {
+    background-color: rgb(33,61,134);
+    color: white;
+    font-family: verdana;
+    font-size: 0.8em;
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+    padding: 3px;
+}
+
+#caja2 {
+    background-color: rgb(65,166,123);
+    position: fixed;
+    left: 90px;
+    top: 50px;
+}
+
+h3 {
+    color: yellow;
+}

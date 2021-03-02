@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>box-sizing</title>
+    <link rel="stylesheet" href="boxsizing.css">
+</head>
+
+<body>
+    <div class="caja" id="caja1">
+    <p>El box model o "modelo de cajas" es el comportamiento del CSS que hace que todos los
+    elementos de la página se representen mediante cajas rectangulares</p>
+    <span class="estiloCodigo">box-sizing: content-box;<br>width: 500px; <br>padding: 0px; </span>
+    </div>
+
+    <div class="caja" id="caja2">
+    Por default todos los elementos de bloque tendrán la propiedad box-sizing <br>establecida a content-box<br><br>
+    <span class="estiloCodigo">box-sizing: content-box;<br>width: 500px; <br>padding: 20px</span>
+    </div>
+
+    <div class="caja" id="caja3">
+    Se recomienda siempre cambiar la propiedad box-sizing a border-box<br>
+    esto hará que se incluya el border y el padding dentro de la propiedad width<br><br>
+    <span class="estiloCodigo">box-sizing: border-box; <br>padding: 50px <br> box-sizing: border-box</span>
+    </div>
+
+</body>
+
+
+</html>

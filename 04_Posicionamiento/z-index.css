@@ -1,0 +1,37 @@
+.caja {
+    width: 560px;
+    color: white;
+    font-family: verdana;
+    font-size: 1.3em;
+    position: absolute;
+}
+
+#caja1 { 
+    background-color:darkblue;
+    left: 10px;
+    top: 10px;   
+    z-index: 4; 
+}
+    
+#caja2 { 
+    background-color: limegreen;
+    left: 80px;
+    top: 80px;
+    z-index: 3; 
+}
+
+#caja3 { 
+    background-color: mediumpurple;
+    left: 170px;
+    top: 170px;   
+    z-index: 2; 
+}
+
+#caja4 { 
+    background-color: #ea05e1;
+    left: 240px;
+    top: 240px;   
+    z-index: 1; 
+}
+
+    

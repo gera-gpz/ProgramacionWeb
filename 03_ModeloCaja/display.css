@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+
+.bloque {
+    border-style: solid;
+    border-color: black;
+    margin: 10px;;
+}
+
+
+p {
+    border-style: solid;
+    border-color:blue;
+    margin: 10px;
+}
+
+#parrafo2 { width:50%; 
+}
+
+
+.parrafoblock {
+    background:purple;
+    border-style: solid;
+    border-color:black;
+    color:white;
+}
+
+.parrafoinline {
+    background:purple;
+    border-style: solid;
+    border-color:black;
+    display: inline;
+    color:white;
+}
+
+
+
+.estiloCodigo {
+    font-family: 'Courier New', Courier, monospace;
+    color:red;
+    font: bold 13px;
+}

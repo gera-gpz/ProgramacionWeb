@@ -1,0 +1,26 @@
+/* Ejemplos de Selectores Pseudoclase*/
+
+/* Pseudoclase: Son simplemente claves añadidas al selector
+   para referirse a un estado del elemento
+
+*/
+
+body { color: blue;
+       font-weight: bold;}
+
+ul {
+    list-style: none;
+}
+
+#menu1 li:hover {
+    color:red;
+}
+
+#menu2 li:hover {
+    border-style: solid;
+    border-color: brown;
+}
+
+a:link { color:green; }
+
+a:visited { color:red; }

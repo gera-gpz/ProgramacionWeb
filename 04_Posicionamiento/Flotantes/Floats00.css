@@ -1,0 +1,18 @@
+
+h1 { color: white; 
+}
+
+
+/* Las cajas flotarán de izquierda a derecha*/
+.caja {
+    float: left;
+    width: 250px;
+    background-color: #825ff5;
+    margin: 10px;
+}
+
+/*A la izquierda de la #caja3 no debe haber elementos flotantes*/
+/* #caja4 {
+    clear: left;
+    background-color: #53ea58;
+} */

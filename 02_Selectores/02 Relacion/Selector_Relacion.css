@@ -1,0 +1,30 @@
+/* Ejemplos de Selectores de Relacion*/
+
+body { color: blue;}
+p    { font-weight: bold;}
+
+
+/* La coma simplemente agrupa selectores (actua como separador)*/
+/*---------------------------------------*/
+h2, #par3 { color:red; }
+
+
+/* Descendiente (que <p> estén adentro de #contenedor)*/
+/*------------------------------------*/
+/* #contenedor p { color:red;}  */
+
+
+/* Hijo Directo (que <p> sea hijo inmediato de #contenedor)*/
+/*---------------------------------------*/
+/* #contenedor > p { color:red;} */
+
+
+/* Hermano Adyacente (El <div> debe estar inmediatamente despues de <p>)*/
+/*-----------------------------------------*/
+/* p + div { color:red;} */
+
+
+/* Hermano General (No es necesario que el <div> este inmediatamente despues de <p>)*/
+/*------------------------------------------------------*/
+/* p ~ div { color:red;} */
+

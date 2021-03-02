@@ -1,0 +1,23 @@
+
+/* Definición de estilo por tag (etiqueta) */
+body {
+    color:violet;
+}
+
+p {
+    color: blue;
+}
+
+
+
+/* Definición de estilo por ID */
+#par3 {
+    color: red;
+}
+
+
+
+/* Definición de estilo en una clase */
+.parVerdes {
+    color: green;
+}

@@ -1,0 +1,21 @@
+
+#contenedor {
+  position: relative;
+  display: inline-block;
+  background-color:greenyellow;
+  color:blue;
+}
+
+#contenedor #tooltip {
+  visibility: hidden;
+  position: absolute;
+  left:100%;
+  z-index: 1;
+  width: 100px;
+  background-color:blue;
+  color:white;
+}
+
+#contenedor:hover #tooltip {
+  visibility: visible;
+}

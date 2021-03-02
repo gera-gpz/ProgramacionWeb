@@ -1,0 +1,12 @@
+body {
+       font-weight: bold;
+       font-size: 50px;
+}
+
+div .parrafo {
+       color: blue !important;
+}
+
+p.parrafo {
+       color: green;
+}

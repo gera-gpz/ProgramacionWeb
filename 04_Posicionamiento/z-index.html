@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de posicionamiento absoluto</title>
+    <link rel="stylesheet" href="z-index.css">
+</head>
+
+<body>
+
+    <div class="caja" id="caja1">
+        <h3>Caja 1</h3>
+        <p>position: absolute;</p>
+    </div>
+
+    <div class="caja" id="caja2">
+        <h3>Caja 2</h3>
+        <p>Posicion absoluta respecto a cordenada x-y<br>
+           de elemento padre posicionado o viewport
+        </p>
+    </div>
+
+    <div class="caja" id="caja3">
+        <h3>Caja 3</h3>
+        <p>Elemento fuera de flujo<br>
+           No se reserva espacio en el docto</p>
+    </div>
+
+    <div class="caja" id="caja4">
+        <h3>Caja 4</h3>
+        <p>z-index: 1<br>
+           Define el orden en la pila, los mayores van arriba.<br>
+           funciona con elementos posicionados</p>
+        </p>
+    </div>
+
+</body>
+
+</html>

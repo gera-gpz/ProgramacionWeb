@@ -1,0 +1,27 @@
+.caja {
+    width: 500px;
+    margin: 10px auto;
+    border: 2px solid blue;
+}
+
+#caja1 {
+    box-sizing: content-box;  /* Este es el default, no se necesita declarar*/
+    padding: 0px;
+}
+
+#caja2 {
+    box-sizing: content-box;  /* Este es el default, no se necesita declarar*/
+    padding: 20px;
+}
+
+#caja3 {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.estiloCodigo {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    /* font: bold 13px; */
+}
