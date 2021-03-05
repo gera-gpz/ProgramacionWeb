@@ -13,7 +13,7 @@ Pero podemos "hacer que los vea" agregandole la propiedad overflow
   position: relative;
   background-color: blue;
   padding: 7px;
-  /* overflow: auto; */
+  overflow: auto;
 }
 
 .cajaInternaFloat {

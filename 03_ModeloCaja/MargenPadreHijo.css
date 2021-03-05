@@ -12,9 +12,9 @@
     margin: 30px;
     background-color: yellowgreen;
     height: 100px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* padding: 10px; */
-}
+    }
 
 .contenedorHijo {
     margin: 10px;

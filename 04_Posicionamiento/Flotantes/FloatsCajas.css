@@ -12,7 +12,7 @@ h1 { color: white;
 }
 
 /*A la izquierda de la #caja3 no debe haber elementos flotantes*/
-/* #caja4 {
+ #caja4 {
     clear: left;
     background-color: #53ea58;
-} */
+} 

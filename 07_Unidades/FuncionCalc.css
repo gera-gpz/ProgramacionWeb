@@ -1,41 +1,57 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
- .contenedor {
-  width: 100%;
-  border: 2px solid blue;
-  background-color: aquamarine;
-  overflow: hidden;
- }
+.contenedor {
+   width: 100%;
+   min-width: 200px;
+   border: 2px solid blue;
+   background-color: aquamarine;
+   overflow: auto;
+}
 
-.caja.boxy {
-  float: left;
-  border: 2px solid red;
-  margin: 10px;
-  width: calc((100%/3) - 20px);
-  min-width: 175px;
+.caja {
+   float: left;
+   border: 2px solid red;
+   margin: 10px;
+   width: calc((100% / 3) - 20px);
 }
 
 #caja1 {
-  line-height: calc(1em + 2px);
+   line-height: calc(1em + 5px);
 }
 
 #caja2 {
-  line-height: calc(1em + 6px);
+   line-height: calc(1em + 10px);
 }
 
-#caja3 {}
-  line-height: calc(1em + 8px);
+#caja3 {
+   line-height: calc(1em + 15px);
 }
 
 
-@media screen and (max-width:700px) {
-   .caja {
-    float:none;
-    width: calc(100% - 20px);
-    color:#00ff00;
+@media screen and (min-width:501px) and (max-width:900px) {
+   #caja3 {
+      float: none;
+      position: relative;
+      width: calc(100% - 20px);
+      clear: left;
    }
+
+   #caja1,
+   #caja2 {
+      width: calc((100% / 2) - 20px);
+   }
+}
+
+@media screen and (max-width:500px) {
+
+   .caja {
+      float: none;
+      position: relative;
+      width: calc(100% - 20px);
+   }
+
 }

@@ -1,0 +1,23 @@
+
+.caja {
+  width: 600px;
+  height: 150px;
+  background-color: blue;
+  margin: 5px;
+}
+
+h3 {
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#caja2 {
+ position: absolute;
+ top: -9999px;
+ left: -9999px;
+}
+
+p {
+ color: white;
+}

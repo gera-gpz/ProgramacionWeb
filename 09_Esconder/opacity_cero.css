@@ -1,0 +1,27 @@
+
+.caja {
+  width: 600px;
+  height: 150px;
+  background-color: blue;
+  margin: 5px;
+}
+
+h3 {
+    color: yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#caja1 {
+ opacity: .5;
+}
+
+#caja2 {
+ opacity: 0;
+}
+
+#caja2:active { opacity:1; }
+
+p {
+ color: white;
+}
