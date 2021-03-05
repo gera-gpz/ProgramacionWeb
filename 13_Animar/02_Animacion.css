@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+
+
+#cont1 {
+    background-color: blue;
+    color:white;
+    animation: cambiarAncho 4s linear 0s 4 normal forwards running;
+}
+
+#cont2 {
+    background-color: yellow;
+    color:white;
+    animation-name: cambiarAnchoColor;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes cambiarAncho {
+    from {
+        width:300px;
+    }
+    to {
+        width:700px;
+    }
+}
+
+
+@keyframes cambiarAnchoColor {
+    0%   { width:200px; background-color: yellow; }
+    25%  { width:250px; background-color: yellowgreen; }
+    50%  { width:300px; background-color: orange; }
+    75%  { width:350px; background-color: orangered; }
+    100% { width:400px; background-color: red; }
+
+}
+

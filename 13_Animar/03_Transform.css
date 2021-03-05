@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#cont1:hover {
+    transform: translate(20px, 20px);
+}
+
+#cont2:hover {
+    transform: scale(1.5);
+}
+
+#cont3:hover {
+    transform: rotate(30deg);
+}
+
+#cont4:hover {
+    transform: skew(30deg, 30deg);
+}

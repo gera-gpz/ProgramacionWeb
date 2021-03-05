@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    width: 200px;
+    height: 500px;
+}
+
+ul > li > ul {
+    display: none;
+}
+
+ul > li:target > ul {
+    display: block;
+    height: 100%;
+}
+
+
+.opcion {
+    background: blue;
+    color: white;
+}
+
+a { color: white;
+    text-decoration: none;
+}
+
+.subOpcion {
+    padding-left: 20px;
+    background: gray;
+    color: white;
+}
