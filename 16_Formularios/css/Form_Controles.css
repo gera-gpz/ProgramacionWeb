@@ -1,0 +1,10 @@
+
+label {
+    font-weight: bold;
+}
+
+legend {
+    color: blue;
+    background-color: yellow;
+    font-weight: bold;
+}

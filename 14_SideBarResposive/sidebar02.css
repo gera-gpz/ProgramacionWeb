@@ -1,0 +1,67 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Barra Lateral inicialmente flotando desde la izquierda,
+   con un ancho de 200px */
+div.sidebar {
+  float: left;
+  width: 200px;
+  background-color:lightgray;
+  height: 1000px;
+  overflow: auto;
+}
+
+
+ul { display: block;
+}
+
+
+/* Area de contenido inicialmente flotando desde la izquierda
+   Se colocará enseguida de la barra lateral
+   pero con un ancho del 100% menos el ancho de la barra lateral*/
+div.content {
+  float: left;
+  width: calc(100% - 200px);
+  background-color: cadetblue;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+/* En el primer punto de quiebre que la barra de contenido
+   ocupe el 100% del ancho y su alto lo definira el contenido (el menu) */
+   div.sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Las opciones del menu ahora se colocaran una enseguida de la otra */
+  ul > li{
+    display: inline-block;
+  }
+
+  /* No se permiten elementos flotantes a la izquierda del contenido
+  y su ancho ahora era del 100% */
+  div.content {
+    clear:left;
+    width:100%;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  /* En el tercer punto de quiebre ahora las opciones del menu 
+     seran bloques y se colocaran una encima de la otra */
+  ul > li{ 
+    display: block;
+    text-align:center;
+  }
+}

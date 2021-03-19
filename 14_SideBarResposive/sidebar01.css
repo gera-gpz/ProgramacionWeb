@@ -1,0 +1,75 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* La barra lateral la posicionamos fixed, es decir la sacamos
+   del flujo del documento y la dejamos fija y como en algun
+   momento tendrá elementos flotantes dentro establecemos
+   la propiedad overflow a auto para que "vea los flotantes"
+   */
+div.sidebar {
+  position: fixed;
+  width: 200px;
+  background-color:lightgray;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Los links se comportaran como bloques*/
+a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+a:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+/* El area de contenido sera inicialmente posicionada estatica
+   ocupara su lugar pero le damos margen para la barra lateral */
+div.content {
+  position: relative;
+  background-color: cadetblue;
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  /* Cambiamos la barra lateral de fixed a relative
+     es decir ocupará su lugar en el flujo del documento
+     y le decimos que ocupe todo el ancho (ya no solo los 200px iniciales*/
+  div.sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Las opciones del menu ahora flotaran */
+  .sidebar a {float: left;}
+
+  /* Como ya no habrá barra lateral ( ya que estará arriba )
+     eliminamos el margen del div de contenido*/
+  div.content {margin-left: 0;}
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  /* Ahora las opciones del menu dejara de flotar 
+     y seran bloques uno sobre otro */
+  .sidebar a {
+    float: none;
+    text-align: center;
+  }
+}

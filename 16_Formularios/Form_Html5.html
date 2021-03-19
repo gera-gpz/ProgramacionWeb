@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 form elements</title>
+</head>
+
+<body>
+    <form action="procesar.php" method="post">
+    <label for="Elem_email">Email</label>
+    <input type="email" id="Elem_email" name="Elem_email" value="Su email">
+
+    <label for="Elem_date">Fecha Nacimiento</label>
+    <input type="date" id="Elem_date" name ="Elem_date">
+
+    <label for="Elem_languages">Lenguajes</label>
+    <select id="Elem_languages" name="Elem_languages">
+    <option value="1">Html</option>
+    <option value="2">C</option>
+    <option value="3">C++</option>
+    <option value="4">C#</option>
+    <option value="5">Css</option>
+    <opcion value="6">Java</opcion>
+    <option value="7">Javascript</option>
+    <option value="8">JQuery</option>
+    <option value="9">Php</option>
+    <option value="10">Perl</option>
+    <option value="11">Pascal</option>
+    <option value="12">Json</option>
+    <option value="13">FoxPro</option>
+    </select>
+
+    <input list="autocompletar" id="dlist" name="dlist">
+    <datalist id="autocompletar" name="autocompletar">
+    <option value="1">Html</option>
+    <option value="2">C</option>
+    <option value="3">C++</option>
+    <option value="4">C#</option>
+    <option value="5">Css</option>
+    <opcion value="6">Java</opcion>
+    <option value="7">Javascript</option>
+    <option value="8">JQuery</option>
+    <option value="9">Php</option>
+    <option value="10">Perl</option>
+    <option value="11">Pascal</option>
+    <option value="12">Json</option>
+    <option value="13">FoxPro</option>
+    </datalist>
+
+    <input type="submit" id="Elem_boton_a" name="Elem_boton_a" value="Aceptar">
+
+    </form>
+</body>
+
+</html>

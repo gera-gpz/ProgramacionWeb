@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario Comentarios</title>
+    <link rel="stylesheet" href="Form_Comentarios.css">
+</head>
+
+<body>
+<div id="contenedor">
+    <form method="POST" action="#">
+
+        <label>Ingrese nombre:</label>
+        <input type="text" id="nombre" name="nombre" size="20"><br>
+
+        <label>Ingrese mail:</label>
+        <input type="text" id="email" name="mail" size="45"><br>
+
+        <label LASS="for="sexo">Sexo:</label>
+        <input type="radio" id="sexom" name="sexo" value="M">Masculino
+        <input type="radio" id="sexof" name="sexo" value="F">Femenino<br>
+
+        Lenguajes:<br>
+        <label for="leng1">Html</label>
+        <input type="checkbox" id="leng1" name="leng1" value="1"><br>
+
+        <label for="leng2">Css</label>
+        <input type="checkbox" id="leng2" name="leng2" value="2"><br>
+
+        <label for="leng3">Javascript</label>
+        <input type="checkbox" id="leng3" name="leng3" value="3"><br>
+
+        <label for="materias">Materias</label>
+        <select id="materias" name="materias">
+          <option value="AL">Alegra Lineal</option>
+          <option value="CD">Calculo Diferencial</option>
+          <option value="CI">Calculo Integeral</option>
+          <option value="CV">Calculo Vectorial</option>
+        </select><br>
+
+        <label for="comenta">Comentarios:</label>
+        <textarea id="comenta" name="comenta" cols="30" rows="5" value="Sus Comentarios"></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <title>Controles de Formulario</title>
+    <link rel="stylesheet" href="./css/Form_Controles.css">
+    <link rel="stylesheet" href="./css/add-r.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h2>Formato de registro</h2>
+        <br>
+        <fieldset>                                                                 <!-- agrupa campos -->
+            <legend>Datos Personales</legend>                                      <!-- Nombre del grupo -->
+            <label for="nombre">Nombre:</label>                                    <!-- label deben aputar al id del tag-->
+            <input type="text" name="nombre" id="nombre" size="10" maxlength="20" tabindex="1" value="Su nombre">
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" name="domicilio" id="domicilio" size="10" maxlength="20" tabindex="1"> <!-- maxlength = caracteres permitidos -->
+            <label for="telefono">Telefono:</label>                                                   <!-- size = ancho del control -->
+            <input type="text" name="telefono" id="telefono" size="10" maxlength="20" tabindex="1"><br>
+            <label for="redad">Su rango de edad:</label>
+            <input type="radio" name="redad" id="redad" value="1" disabled tabindex="5">01-10  <!-- disabled por default -->
+            <input type="radio" name="redad" id="redad" value="2">11-20
+            <input type="radio" name="redad" id="redad" value="3">21-30
+            <input type="radio" name="redad" id="redad" value="4" checked>31-40                <!-- Checked por default -->
+            <input type="radio" name="redad" id="redad" value="5">41-..
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="sexo" value="M">Masculino
+            <input type="radio" name="sexo" id="sexo" value="F">Femenino<br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Datos Laborales y Experiencia</legend>
+            <label for="empresa">Empleo actual:</label>
+            <input type="text" name="empresa" id="empresa" size="30" value="razon social">
+            <label for="antiguedad">Antiguedad</label>
+            <input type="text" name="Antiguedad" size="2" value="00">
+            <label for="sueldo">Sueldo Semanal Actual:</label>
+            <select name="sueldo" id="sueldo">
+                <option value="1">1000 - 2000</option>
+                <option value="2">2000 - 4000</option>
+                <option value="3" selected>4000 - 10000</option>
+                <option value="4">10000- .....</option>
+            </select><br>
+            <label for="lang">Lenguajes que domina:</label>
+            <input type="checkbox" id="lang" name="html">HTML
+            <input type="checkbox" id="lang" name="css">CSS
+            <input type="checkbox" id="lang" name="javascript">Javascript
+            <input type="checkbox" id="lang" name="jquery">JQuery
+            <input type="checkbox" id="lang" name="ajax">Ajax
+            <input type="checkbox" id="lang" name="json">Json
+            <input type="checkbox" id="lang" name="xml">Xml
+            <input type="checkbox" id="lang" name="php">Php<br>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="70"
+                tabindex="3">Porque quiere trabajar con nostros?</textarea><br><br>
+            <label for="lectura">Campo de solo lectura:</label>
+            <input type="text" name="lectura" id="lectura" size="20" readonly tabindex="4">   <!--Campo de solo lectura-->
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Alta en sistema</legend>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name=usuario id="usuario" size="10" maxlength="10">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" size="10" mexlength="10" tabindex="2"><br>
+            <label for="depto">Departamento:</label>
+            <select id="depto" name="depto">
+                <option value="1">Sistemas</option>
+                <option value="2">Contabilidad</option>
+                <option value="3">Importacion</option>
+                <option value="4">Exportacion</option>
+                <option value="4">Contraloria</option>
+                <option value="5">Gerencia</option>
+            </select>
+            <label for="paises">Cual de estos Paises ha visitado:</label>
+            <select name="paises" id="paises">
+                <optgroup label="Norteamerica">
+                    <option value="1">Alaska</option>
+                    <option value="2">Canada</option>
+                    <option value="3">Eua</option>
+                    <option value="4">Mexico</option>
+                </optgroup>
+                <optgroup label="Centroamerica">
+                    <option value="5">Belice</option>
+                    <option value="6">Honduras</option>
+                    <option value="7">Guatemala</option>
+                    <option value="8">Panama</option>
+                </optgroup>
+                <optgroup label="Sudamerica">
+                    <option value="9">Argentina</option>
+                    <option value="10">Brasil</option>
+                    <option value="11">Chile</option>
+                    <option value="12">Colombia</option>
+                </optgroup>
+            </select>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Botones</legend>
+            <input type="submit" value="Login" tabindex="6">
+            <input type="reset" value="Clear" tabindex="7">
+        </fieldset>
+
+        <button><i class="gg-add-r"></i></button>
+    </form>
+</body>
+
+</html>
