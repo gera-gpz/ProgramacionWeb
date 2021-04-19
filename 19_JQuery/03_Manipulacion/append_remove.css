@@ -1,0 +1,23 @@
+#list1 ul {
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+    padding: 10px 0;
+}
+
+#list1 ul li {
+    display: block;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 10px;
+}
+
+#list1 ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+#list1 ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+#externo1,#externo2 {
+    font: italic bold 0.9em Sans-Serif;
+    background-color: #2267ac;
+    color: #dd31eb;
+    position: relative;
+    width: 50%;
+    height: 200px;
+}
+
+#interno1,#interno2 {
+    font: italic bold 0.9em Sans-Serif;
+    background-color: #5ce66c;
+    color: #dd31eb;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 50%;
+    height: 50px;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+
+h3 {
+    font: italic bold 0.9em Sans-Serif;
+    color: yellow;
+    text-align: center;
+}

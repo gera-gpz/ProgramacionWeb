@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Propagacion de Eventos</title>
+    <link rel="stylesheet" href="./Propagacion.css">
+</head>
+<body>
+
+    <div id="contenedor">
+    <a id="link1" href="https://aaanld.org">AAANLD</a>
+    <a id="link2" href="https://infinitogl.com">Infinito</a>
+    </div>
+
+    <script>
+    document.querySelector('#link1').addEventListener('click', function(evento) {
+            evento.preventDefault();
+            evento.stopPropagation();
+            console.log("Click en Link 1");
+     });
+
+    document.querySelector('#contenedor').addEventListener('click', function(evento) {
+            console.log("Click en contenedor");
+     });
+
+    </script>
+</body>
+</html>

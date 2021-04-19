@@ -1,0 +1,14 @@
+* {box-sizing: border-box;
+}
+
+.contenedor {
+    border: 2px solid blue;
+    margin: 3px;
+    padding: 5px;
+}
+
+.seccion {
+    border: 2px solid red;
+    margin: 3px;
+    padding: 5px;
+}

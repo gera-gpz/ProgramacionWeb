@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Propagacion</title>
+    <script type="text/javascript" src="../../Resources/JQuery341/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="Propagacion.js"></script>
+    <link rel="stylesheet" type="text/css" href="Propagacion.css">
+</head>
+<body>
+    <div class="contenedor1" id="externo1">
+        <h3>Deteniendo la propagación del evento</h3>
+        <p>Contenedor1 Externo</p>
+        <div class="contenedor1" id="interno1">
+            <p>Contenedor 1 Interno</p>
+        </div>
+    </div>
+    <div class="contenedor2" id="externo2">
+        <h3>Dejando la propagación del evento</h3>
+        <p>Contenedor2 Externo</p>
+        <div class="contenedor2" id="interno2">
+            <p>Contenedor2 Interno</p>
+        </div>
+    </div>
+</body>
+</html>

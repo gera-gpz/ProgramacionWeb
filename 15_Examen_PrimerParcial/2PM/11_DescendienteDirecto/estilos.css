@@ -1,0 +1,26 @@
+/*
+.elem { font-size: xx-large; }
+
+.contenedor > .elem  { color: blue; }
+
+.contenedor > .elem  { color: blue; }
+
+.contenedor > p.elem  { color: blue; }
+
+div.contenedor > p.elem  { color: blue; }
+
+.contenedor > p  { color: blue; }
+
+div.contenedor > p  { color: blue; }
+
+div.contenedor > :first-child { color:blue; }
+
+.contenedor > :first-child { color:blue; }
+
+.contenedor > p:first-of-type { color:blue; }
+*/
+
+
+/* div:first-of-type p:last-child {color:blue}  */
+
+/* div:last-of-type p:first-child {color:blue} */

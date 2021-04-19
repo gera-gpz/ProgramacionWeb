@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Propagacion de Eventos</title>
+    <link rel="stylesheet" href="./Propagacion.css">
+</head>
+<body>
+
+    <div id="contenedor" class="contenedor">
+        <div id="seccion1" class="seccion">
+            <button id="boton1">Boton 1</button>
+        </div>
+
+        <div id="seccion2" class="seccion">
+            <button id="boton2">Boton 2</button>
+        </div>
+    </div>
+
+    <script>
+
+    //Registra manejador de evento click solo en el contenedor
+    document.querySelector('#contenedor').addEventListener('click', function(evento) {
+
+         if (evento.target.id == "boton1") {
+            console.log("Click en boton 1");
+         }
+
+         if (evento.target.id == "boton2") {
+            console.log("Click en boton 2");
+         }
+     });
+
+    </script>
+</body>
+</html>

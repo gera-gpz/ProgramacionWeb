@@ -1,0 +1,18 @@
+#zona {
+	height: 200px;
+	width: 200px;
+	background: blue;
+}
+
+.oculta {
+	transition-property: opacity;
+	transition-duration: 1s;
+	opacity: 0;
+}
+
+.muestra {
+	transition-property: opacity;
+	transition-duration: 1s;
+	opacity: 1;
+	color: #D1D32BFF;
+}

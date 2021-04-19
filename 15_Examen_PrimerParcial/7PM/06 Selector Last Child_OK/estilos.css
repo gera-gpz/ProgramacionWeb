@@ -1,0 +1,10 @@
+
+div p:last-of-type { color:green; }
+
+ /* div :last-child { color:green; } */
+
+/* p:last-child {color:green; } */
+
+/* div p:last-child {color:green; } */
+
+/*div > p:last-child {color:green; }*/

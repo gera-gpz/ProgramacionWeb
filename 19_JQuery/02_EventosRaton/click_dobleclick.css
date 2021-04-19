@@ -1,0 +1,29 @@
+.parrafo {
+    color: #0a00ff;
+    font-weight: bold;
+}
+
+#recuadro {
+    background-color: #80e278;
+    text-align: center;
+    position: relative;
+    left: 40px;
+    top: 30px;
+    width: 800px;
+    height: 70px;
+}
+
+table {
+    border: 3px solid #39058d;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #7e55c1;
+}
+
+tr, 
+td {
+    border: 1px solid blue;
+}
+

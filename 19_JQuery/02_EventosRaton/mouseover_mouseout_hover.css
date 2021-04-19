@@ -1,0 +1,22 @@
+
+#lista1 {
+    list-style-type: none;
+    color: #0101DF;
+}
+
+#lista2 {
+    list-style-type: none;
+    color: #FF0040;
+}
+
+.li1 {
+    display: block;
+    width: 100px;
+    border: 1px solid #fff;
+}
+
+.li2 {
+    display: inline;
+    float: left;
+    width: 100px;
+}

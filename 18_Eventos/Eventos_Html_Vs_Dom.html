@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos en Js</title>
+</head>
+
+<body>
+    <!-- En la propiedad HTML -->
+    <button id="miBoton1" onclick="alert('Hola Mundo 1')"> Hola Mundo 1 </button>
+
+    <button id="miBoton2"> Hola Mundo 2</button>
+
+    <button id="miBoton3"> Hola Mundo 3</button>
+
+    <script>
+    // En las propiedades del elemento en el DOM
+    document.getElementById("miBoton2").onclick = function() { alert("Hola Mundo 2") };
+
+    // Usando adEventListener()
+    document.querySelector('#miBoton3').addEventListener("click",miFuncion2);
+    document.querySelector('#miBoton3').addEventListener("click",miFuncion1);
+
+    function miFuncion1() { alert('Funcion Callback1');}
+    function miFuncion2() { alert('Funcion Callback2');}
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+* {
+    /*  box-sizing: border-box;*/
+  /*  padding: 0;
+    margin: 0;*/
+}
+
+body {
+    background-color: #BCA9F5;
+}
+
+#parrafo1 {
+    font-weight: bold;
+}   
+
+.recuadro {
+    background-color: #ffffcc;
+    font-family: verdana;
+    font-size: 14px;
+    border: 1px 3px 3px 1px;
+    padding: 2em;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: dotted;
+    border-top-color: #ffaa00;
+    border-right-color: #ff0000;
+    border-bottom-color: #ff0000;
+    border-left-color: #ffaa00;
+}
+
+button {
+    margin: 10px;
+}
+
+#Pulsar {
+    background: gray;
+    text-align: center;
+    width: 400px;
+    display: block;
+    border: 2px solid #000;
+}
+
+#marcoImagen {
+    background: #ffaa00;
+    padding: 5px;
+    width: 405px;
+    height: 305px;
+    display: none;
+    border: 2px solid #000;
+}
+
+#imagen {
+    width: 390px;
+    height: 290px;
+}

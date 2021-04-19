@@ -1,0 +1,17 @@
+div.contenedor {
+    position: relative;
+}
+
+img.baw {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+img.col {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}

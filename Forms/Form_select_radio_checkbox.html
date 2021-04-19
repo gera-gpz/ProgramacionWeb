@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Ejemplo Control Select</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+	function verificarSelect()
+	   { var seleccion=document.getElementById('idSelect1');
+         document.getElementById('text1').value=seleccion.selectedIndex;
+         document.getElementById('text2').value=seleccion.options[seleccion.selectedIndex].text;
+         document.getElementById('text3').value=seleccion.options[seleccion.selectedIndex].value;
+        }
+    
+    function verificarRadio()
+	   { if (document.getElementById('idRadio1').checked) { alert("No estudiaste"); }
+		 if (document.getElementById('idRadio2').checked) { alert("Estudiaste hasta Primaria"); }
+		 if (document.getElementById('idRadio3').checked) { alert("Estudiaste hasta Secundaria"); }
+		 if (document.getElementById('idRadio4').checked) { alert("Estudiaste hasta Preparatoria"); }
+		 if (document.getElementById('idRadio5').checked) { alert("Estudiaste una licenciatura"); }
+	   }
+    
+    function verificarCheckbox()
+	   { var contador=0;
+         if (document.getElementById('idCheckBox1').checked) { contador++; }
+	     if (document.getElementById('idCheckBox2').checked) { contador++; }
+	     if (document.getElementById('idCheckBox3').checked) { contador++; }
+	     if (document.getElementById('idCheckBox4').checked) { contador++; }
+	     if (document.getElementById('idCheckBox5').checked) { contador++; }
+	     if (document.getElementById('idCheckBox6').checked) { contador++; }
+	     alert('Conoces '+contador+' Lenguajes');
+       }
+	
+	</script>
+	
+
+    <form>
+	<br><br>
+
+    <h4>Selecciona un color:</h4>
+    <select id="idSelect1" onChange="verificarSelect()">
+		<option value="0xff0000">Rojo</option>
+		<option value="0x00ff00">Verde</option>
+		<option value="0xff00ff">Azul</option>
+	</select>
+
+    <h4>Cual es su grado de estudios:</h4>
+    <input type="radio" id="idRadio1" name="Estudios">Sin estudios<br>
+	<input type="radio" id="idRadio2" name="Estudios">Primaria<br>
+	<input type="radio" id="idRadio3" name="Estudios">Secundaria<br>
+	<input type="radio" id="idRadio4" name="Estudios">Preparatoria<br>
+	<input type="radio" id="idRadio5" name="Estudios">Licenciatura<br>
+
+    <h4>Cuales son los lenguajes que conoce:</h4>
+	<input type="checkbox" id="idCheckBox1">HTML<br>
+	<input type="checkbox" id="idCheckBox2">CSS<br>
+	<input type="checkbox" id="idCheckBox3">Javascript<br>
+	<input type="Checkbox" id="idCheckBox4">JQuery<br>
+	<input type="Checkbox" id="idCheckBox5">Ajax<br>
+	<input type="Checkbox" id="idCheckBox6">Php<br>
+    <br><br>
+    <input type="button" id="idBoton1" value="verificar radio" onClick="verificarRadio()">
+    <input type="button" id="idBoton2" value="verificar checkbox" onClick="verificarCheckbox()">
+        
+        
+    <hr><br><br>
+    OBJETO SELECT :
+    Indice: <input type="text" id="text1"><br>
+    Texto : <input type="text" id="text2"><br>
+    Valor : <input type="text" id="text3"><br>
+
+    </form>
+
+</body>
+<html>

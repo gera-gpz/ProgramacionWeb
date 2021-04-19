@@ -1,0 +1,16 @@
+body {
+    background-color: #D8CEF6;
+    color: #0B0B61;
+}
+
+p {
+    font: italic bold 12px/30px Georgia serif;
+}
+
+#posx,
+#posy {
+    height: 100px;
+    width: 100px;
+    background-color: #58FAAC;
+    box-shadow: 10px 10px 5px #888888;
+}
