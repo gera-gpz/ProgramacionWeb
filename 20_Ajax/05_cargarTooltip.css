@@ -1,0 +1,16 @@
+
+.cuadrado{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+    z-index:-1;
+}
+
+#divTooltip{
+     background-color:lightblue;
+     position: absolute;
+     padding: 5px;
+     width: 150px;
+     z-index: 100;
+}

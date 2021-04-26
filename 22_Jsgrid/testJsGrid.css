@@ -1,0 +1,102 @@
+/* Tomado de CatalogosCSS.css */
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.barraSuperior{
+    position: relative;
+    width:100%;
+    height:80px;
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1)));                                 /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+}
+
+.barraSuperiorBotones{
+    position:absolute;
+    width:150px;
+    height:75px;
+
+    padding:5px;
+    margin:2px;
+
+    background-color: #A3A0A0;
+    border: 1px solid blue;
+
+    color:black:;
+    font-size:12px;
+    webkit-border-radius:  12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.barraSuperiorParametros{
+    position:absolute;
+    width: calc(100% - 160px);
+    left: 155px;
+    height:75px;
+
+    margin:2px;
+    padding:5px;
+
+    color: white;
+    background-color:  #A3A0A0;
+    border: 1px solid blue;
+    font-size:14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    webkit-border-radius:  12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+
+.btn_N{
+    float:left;
+    width:60px;
+    height:60px;
+    background-image:url(../../../Resources/Images/doc.png) !important;
+    background-repeat:no-repeat !important;
+    outline:0px;
+    background-position:center;
+}
+
+.btn_G{
+    float:left;
+    width:60px;
+    height:60px;
+    background-image:url(../../../Resources/Images/lupa.png) !important;
+    background-repeat:no-repeat !important;
+    outline:0px;
+    background-position:center;
+}
+
+#Container{
+    width:100%;
+}
+
+    #divTitulo{
+    padding:8px;
+    width:100%;
+    height:30px;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    /*COLOR*/
+    background: #7db9e8;
+    background: -moz-linear-gradient(top, #7db9e8 1%, #7db9e8 1%, #2989d8 72%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#7db9e8), color-stop(1%,#7db9e8), color-stop(72%,#2989d8));                              /*Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7db9e8 1%,#7db9e8 1%,#2989d8 72%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7db9e8 1%,#7db9e8 1%,#2989d8 72%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7db9e8 1%,#7db9e8 1%,#2989d8 72%); /* IE10+ */
+    background: linear-gradient(to bottom, #7db9e8 1%,#7db9e8 1%,#2989d8 72%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */
+    }

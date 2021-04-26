@@ -1,0 +1,1 @@
+<h2>Se cambio header mediante Ajax<h2>
