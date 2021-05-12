@@ -1,0 +1,15 @@
+
+.campos label {
+    width: 15%;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+}
+
+.campos input {
+    margin-left: 5px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}

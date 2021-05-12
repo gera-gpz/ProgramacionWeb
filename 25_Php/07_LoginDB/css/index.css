@@ -1,0 +1,136 @@
+/*----------------
+   Contenedores
+ ----------------*/
+
+#contenedorPrin {
+    padding-left: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#contenedorMenu {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #0e1b60;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#contenedorConte {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#contenedorPrin.toggled {
+    padding-left: 250px;
+}
+
+#contenedorPrin.toggled #contenedorMenu {
+    width: 250px;
+}
+
+#contenedorPrin.toggled #contenedorConte {
+    position: absolute;
+    margin-right: -250px;
+}
+
+#contenedorConte .encabezado {
+    padding-bottom: 5px;
+    border-bottom: 2px solid blue;
+}
+
+.encabezado .enca1 {
+    text-align: left;
+}
+
+.encabezado .enca2 {
+    text-align: right;
+}
+
+i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/*-----------------*/
+/*  Barra de Menu  */
+/*-----------------*/
+.menu {
+    position: absolute;
+    top: 65px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(42, 182, 212, 1.0);
+}
+
+.menu li a:active,
+.menu li a:focus {
+    text-decoration: none;
+}
+
+#contenedorMenu > .titulo-menu {
+    display: block;
+    height: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #999999;
+    text-align: center;
+}
+
+
+/*---------------*/
+/*  Media Query  */
+/*---------------*/
+
+@media(min-width:768px) {
+    #contenedorPrin {
+        padding-left: 250px;
+    }
+    #contenedorMenu {
+        width: 250px;
+    }
+    #contenedorConte {
+        padding: 20px;
+        position: relative;
+    }
+    #contenedorPrin.toggled {
+        padding-left: 0;
+    }
+    #contenedorPrin.toggled #contenedorMenu {
+        width: 0;
+    }
+    #contenedorPrin.toggled #contenedorConte {
+        position: relative;
+        margin-right: 0;
+    }
+}

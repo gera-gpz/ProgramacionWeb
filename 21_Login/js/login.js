@@ -12,7 +12,8 @@ function botonIniciarSesion() {
     var vLog = $('#inputLogin').val();
     var vPas = $('#inputPassword').val();
 
-        if (vLog == 'gerardop' && vPas=='gpineda') {
+        if (vLog == 'gerardop' && vPas=='gpineda') ||
+           (vLog == 'juanp' && vPas=='jperez'){
 
             console.log('login correcto');
 

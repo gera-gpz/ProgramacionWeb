@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mysqli</title>
+    <script src="../../Resources/JQuery341/jquery-3.4.1.js"></script>
+    <script src="../../Resources/JQueryUI1121/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../../Resources/JQueryUI1121/jquery-ui.min.css">
+    <script src="cusuario.js"></script>
+    <link rel="stylesheet" href="cusuario.css">
+</head>
+
+<body>
+<form action="insert.php" method="post">
+
+    <div class=botones>
+    <button type="submit" id="bGrabar">Grabar</button>
+    <button type="reset" id="bLimpiar">Limpiar</button>
+    <button type="borrar" id="bBorrar">Borrar</button>
+    <label for="buscar">Buscar:</label>
+    <input type="text" id="buscar">
+    </div>
+
+    <div class="campos">
+    <label for="id">ID :</label>
+    <input type="text" id="id" name="id">
+    </div>
+
+    <div class="campos">
+    <label for="nombre">Nombre :</label>
+    <input type="text" id="nombre" name="nombre">
+    </div>
+
+    <div class="campos">
+    <label for="paterno">Apellido Paterno :</label>
+    <input type="text" id="paterno" name="paterno">
+    </div>
+
+    <div class="campos">
+    <label for="materno">Apellido Materno :</label>
+    <input type="text" id="materno" name="materno">
+    </div>
+
+    <div class="campos">
+    <label for="login">Login :</label>
+    <input type="text" id="login" name="login">
+    </div>
+
+    <div class="campos">
+    <label for="password">Password :</label>
+    <input type="text" id="password" name="password">
+    </div>
+
+</form>
+</body>
+</html>
