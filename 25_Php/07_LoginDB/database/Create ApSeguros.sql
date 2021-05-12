@@ -1,17 +1,6 @@
 create database apseguros;
 use apseguros;
 
--- drop database apseguros;
--- use apseguros;
--- show tables;
--- drop table cusuario;
--- drop table cagentes;
--- drop table caseguradoras;
--- drop table cramos;
--- drop table cclientes;
--- drop table tpolizas;
-
-
 create table cusuario
 ( idUsuario smallint not null auto_increment,
   nombre    varchar(30),

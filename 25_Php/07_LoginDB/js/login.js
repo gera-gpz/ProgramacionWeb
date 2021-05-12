@@ -14,13 +14,13 @@ function botonIniciarSesion() {
 
     $.post('./php/login.php', {Login:vLog,Password:vPas}, function(ret) {
 
-        console.log(ret.resultado);
+        console.log(ret);
         if (ret['resultado'] != 0) {
             console.log('login incorrecto');
 
             $('#myModal .modal-header').addClass('modal-header-danger');
-            $('#myModal .modal-header h2').text(ret['mensaje']);
-            $('#myModal .modal-body h3').text(ret['detalle']);
+            $('#myModal .modal-header h2').text(ret.mensaje);
+            $('#myModal .modal-body h3').text(ret.detalle);
             $('#myModal').modal();
 
             $("#myModal").on('shown.bs.modal',function() {
@@ -34,9 +34,11 @@ function botonIniciarSesion() {
         else {
             console.log('login correcto');
 
+            console.log(ret);
+
             $('#myModal .modal-header').addClass('modal-header-success');
-            $('#myModal .modal-header h2').text(ret['mensaje']);
-            $('#myModal .modal-body h3').text(ret['detalle']);
+            $('#myModal .modal-header h2').text(ret.mensaje);
+            $('#myModal .modal-body h3').text(ret.detalle);
             $('#myModal').modal();
 
             $("#myModal").on('shown.bs.modal',function() {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<! 
 <?php
 session_start();
 if ( !isset($_SESSION['idUsuario']) || empty($_SESSION['idUsuario']) ) {
@@ -39,7 +40,7 @@ if ( !isset($_SESSION['idUsuario']) || empty($_SESSION['idUsuario']) ) {
                 <h3>Desea salir del Sistema?</h3>
             </div>
             <div class="modal-footer">
-               <a href="logout.php" class="btn btn-default">Si</a>
+               <a href="./php/logout.php" class="btn btn-default">Si</a>
                <a href="#" data-dismiss="modal" class="btn btn-default">No</a>
             </div>
         </div>

@@ -1,12 +1,19 @@
 <?php
+
 $vLogin   = $_POST['Login'];
 $vPassword= $_POST['Password'];
+
+// $vLogin   = 'gerardop';
+// $vPassword= 'gpineda';
+
 
 
 $hostname = 'localhost';
 $database = 'apseguros';
 $username = 'root';
 $password = '';
+
+
 
 $link = new mysqli($hostname, $username, $password, $database);
 
@@ -45,6 +52,9 @@ if ($link->connect_error) {
     $link->close();
 }
 
+//var_dump($row);
+
 $encoded_row = array_map('utf8_encode',$row);
+
 echo json_encode($encoded_row);
 ?>

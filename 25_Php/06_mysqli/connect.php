@@ -5,7 +5,7 @@ $database="apseguros";
 $username="root";
 $password="";
 
-$conexion=mysqli_connect($server,$username,$password,$database) or die("No se pudo conectar a loclhost");
+$conexion=mysqli_connect($server,$username,$password,$database) or die("No se pudo conectar a localhost");
 
 $consulta="select * from cusuario";
 
