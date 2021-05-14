@@ -36,6 +36,6 @@ try {
     $row['detalle']    = $e->getMessage();
 }
 
-// echo json_encode($resultado);
+//echo json_encode($resultado);
 echo json_encode($row);
 ?>
