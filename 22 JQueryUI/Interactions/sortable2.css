@@ -1,0 +1,37 @@
+
+#Lista1,#Lista2,
+#Lista3,#Lista4 {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 20%;
+     float: left
+ }
+
+
+h3 {
+    text-align: center;
+    color:#0808ce;
+}
+
+li {
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 15px;
+    height: 16px;
+}
+
+
+.default {
+    background: #cedc98;
+    border: 1px solid #DDDDDD;
+    color: #333333;
+}
+
+.highlight {
+     border: 1px solid #1820dd;
+     font-weight: bold;
+     font-size: 23px;
+     background-color: #6fe35f;
+}

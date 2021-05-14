@@ -1,0 +1,37 @@
+
+#sortable-1 { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 25%; 
+}
+
+#sortable-1 li { 
+    margin: 0 3px 3px 3px; 
+    padding: 0.4em; 
+    padding-left: 1.5em; 
+    font-size: 17px; 
+    height: 16px; 
+}
+
+.default {
+     background: #cedc98;
+     border: 1px solid #DDDDDD;
+     color: #333333;
+}
+
+.highlight {
+     border: 1px solid #1820dd;
+     font-weight: bold;
+     font-size: 45px;
+     background-color: #6fe35f;
+}
+
+#orden {
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+    border: 1px solid #1820dd;
+    background-color: #6fe35f;   
+}
+

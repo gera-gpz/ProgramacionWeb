@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h4 {
+    text-align: center;
+}
+
+p {
+    background-color: bisque;
+    color: blue;
+    width: 50%;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+#origin0,#destiny1,#destiny2,
+#tuperware,#frutas,#verduras {
+    margin-top: 20px;
+    width: 30%;
+    height: 150px;
+    float: left;
+}
+
+
+.spacer {
+    width: 100%;
+    height: 20px;
+}
+
+
+.active {
+    border-color: blue;
+    background: grey;
+}
+
+.hover {
+    border-color: red;
+    background: green;
+}

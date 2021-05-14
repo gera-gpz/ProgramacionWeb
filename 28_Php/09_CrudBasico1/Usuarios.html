@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="./resources/bootstrap/css/bootstrap.min.css">
+       <script src="./resources/jquery/jquery-1.11.3.min.js"></script>
+       <script src="./resources/jqueryui/jquery-ui.min.js"></script>
+       <link rel="stylesheet" href="./resources/jqueryui/jquery-ui.theme.min.css" />
+       <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
+       <script src="./js/Usuarios.js"></script>
+       <title>ABC</title>
+</head>
+
+<body>
+    <div class="container">
+      <!-- Modal de Dialogo -->
+      <div class="modal fade" id="modalMensaje" role="dialog">
+      <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">X</button>
+              <h2 class="modal-title text-center">Acceso</h2>
+          </div>
+
+          <div class="modal-body text-center">
+              <h3>Message</h3>
+          </div>
+
+          <div class="modal-footer">
+              <button id="botonCerrar" type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>
+          </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Modal de Confirmación -->
+      <div class="modal fade" id="modalSalida" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                          <button type="button" class="close" data-dismiss="modal">X</button>
+                          <h2 class="modal-title text-center">Confirmación</h2>
+                      </div>
+                      <div class="modal-body text-center">
+                          <h3>Desea Borrar el registro?</h3>
+            </div>
+            <div class="modal-footer">
+                  <button id="botonCerrar" type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>
+                  <button id="botonCerrar" type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>
+                  <a href="logout.php" class="btn btn-default">Si</a>
+                 <a href="#" data-dismiss="modal" class="btn btn-default">No</a>
+            </div>
+      </div>
+      </div>
+      </div>
+
+
+      <form class="form">
+
+      <div class="row">
+            <div class="form-group col-xs-6">
+            <button id="b_limpiar"  type="button" class="btn btn-primary">Limpiar</button>
+            <button id="b_nuevo"    type="button" class="btn btn-primary">Nuevo</button>
+            <button id="b_grabar"   type="button" class="btn btn-primary" disabled>Grabar</button>
+            <button id="b_eliminar" type="button" class="btn btn-primary" disabled>Eliminar</button>
+      </div>
+      <div class="form-group col-xs-6 ui-widget">
+            <label for="buscar">Buscar</label>
+            <input id="buscar">
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="form-group col-xs-4">
+            <label for="idUsuario" class="control-label">ID</label>
+            <input id="idUsuario" type="text" class="form-control" placeholder="00"disabled/>
+      </div>
+      <div class="form-group col-xs-8">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" class="form-control" placeholder="Nombre" disabled/>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="form-group col-xs-7">
+            <label for="apPaterno">Ap. Paterno</label>
+            <input id="apPaterno" type="text" class="form-control" placeholder="Apellido Paterno"disabled/>
+      </div>
+      <div class="form-group col-xs-5">
+            <label for="apMaterno">Ap. Materno</label>
+            <input id="apMaterno" type="text" class="form-control" placeholder="Apellido Materno" disabled/>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="form-group col-xs-7">
+            <label for="login">Login</label>
+            <input id="login" type="text" class="form-control" placeholder="Login"disabled/>
+      </div>
+      <div class="form-group col-xs-5">
+            <label for="password">Password</label>
+            <input id="password" type="password" class="form-control" placeholder="Password"disabled/>
+      </div>
+      </div>
+
+    </form>
+    <div>
+</body>
+
+<html>
