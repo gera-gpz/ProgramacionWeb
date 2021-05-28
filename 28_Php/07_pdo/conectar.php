@@ -1,10 +1,9 @@
 <?php
 
 $hostname='localhost';
-$database='ejemplo';
+$database='apseguros';
 $username='root';
 $password='';
-
 
 try {
       $con = new PDO("mysql:host=$hostname;dbname=$database",$username,$password);

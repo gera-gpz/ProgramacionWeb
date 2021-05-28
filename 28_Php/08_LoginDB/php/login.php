@@ -1,10 +1,10 @@
 <?php
 
-$vLogin   = $_POST['Login'];
-$vPassword= $_POST['Password'];
+// $vLogin   = $_POST['Login'];
+// $vPassword= $_POST['Password'];
 
-// $vLogin   = 'gerardop';
-// $vPassword= 'gpineda';
+$vLogin   = 'gerardop';
+$vPassword= 'gpineda';
 
 
 $hostname = 'localhost';
@@ -55,7 +55,7 @@ if ($link->connect_error) {
 // var_dump($row);
 
 
-$encoded_row = arr  ay_map('utf8_encode',$row);
+$encoded_row = array_map('utf8_encode',$row);
 
 
 echo json_encode($encoded_row);
